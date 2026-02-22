@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description: "A minimal Next.js starter template",
+  title: "EarnHub - Earn Money Online with Tasks & Referrals",
+  description: "Join thousands of earners making money online through simple tasks, surveys, and our 3-level referral program. Free to join, instant payouts.",
+  keywords: ["earn money online", "referral program", "passive income", "online tasks", "cashback", "surveys"],
 };
 
 export default function RootLayout({
