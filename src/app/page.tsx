@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-neutral-900 via-neutral-900 to-neutral-800">
@@ -20,12 +22,12 @@ export default function Home() {
               referral links. No skills required, start earning today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-cyan-600 transition-all shadow-lg shadow-emerald-500/25">
+              <Link href="/register" className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-semibold rounded-xl hover:from-emerald-600 hover:to-cyan-600 transition-all shadow-lg shadow-emerald-500/25">
                 Start Earning Now
-              </button>
-              <button className="px-8 py-4 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-all border border-white/20">
-                Learn More
-              </button>
+              </Link>
+              <Link href="/login" className="px-8 py-4 bg-white/10 text-white font-semibold rounded-xl hover:bg-white/20 transition-all border border-white/20">
+                Login
+              </Link>
             </div>
             <div className="mt-12 flex items-center justify-center gap-8 text-neutral-400">
               <div className="flex items-center gap-2">
@@ -429,9 +431,9 @@ export default function Home() {
             Join 150,000+ earners who are already making money. Sign up takes less than 30 seconds 
             and you can start earning immediately.
           </p>
-          <button className="px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-semibold text-lg rounded-xl hover:from-emerald-600 hover:to-cyan-600 transition-all shadow-lg shadow-emerald-500/25">
+          <Link href="/register" className="inline-block px-10 py-5 bg-gradient-to-r from-emerald-500 to-cyan-500 text-white font-semibold text-lg rounded-xl hover:from-emerald-600 hover:to-cyan-600 transition-all shadow-lg shadow-emerald-500/25">
             Create Free Account
-          </button>
+          </Link>
           <p className="mt-6 text-neutral-500 text-sm">
             No credit card required · Free forever · Instant activation
           </p>
